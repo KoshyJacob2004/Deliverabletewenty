@@ -62,7 +62,7 @@ window.addEventListener("load", function() {
             // Update the volume slider and text
             document.querySelector('#slider').value = previousVolume * 100;
             document.querySelector('#volume').textContent = Math.round(previousVolume * 100) + '%';
-			muteButton.textContent = "Unmute";
+			muteButton.textContent = "Mute";
         } else {
             // Mute the video
             previousVolume = video.volume; // Store the current volume
@@ -72,7 +72,7 @@ window.addEventListener("load", function() {
             // Update the volume slider and text
             document.querySelector('#slider').value = 0;
             document.querySelector('#volume').textContent = "0%";
-			muteButton.textContent = "Mute";
+			muteButton.textContent = "Unmute";
         }
     });
 
