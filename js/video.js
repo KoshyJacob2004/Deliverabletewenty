@@ -41,9 +41,8 @@ window.addEventListener("load", function() {
         console.log("Current video location: " + video.currentTime);
     });
 
-	var muteButton = document.querySelector("#mute");
-    muteButton.addEventListener("click", function() {
-        var muteButton = document.getElementById('player1');
+document.getElementById('mute').addEventListener('click', function() {
+		var videoElement = document.getElementById('player1');
 		videoElement.muted = !videoElement.muted;
 
 		if (document.getElementById('mute').textContent === "Mute"){
