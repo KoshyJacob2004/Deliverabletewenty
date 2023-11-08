@@ -54,7 +54,7 @@ window.addEventListener("load", function() {
 	var muteButton = document.querySelector("#mute");
     muteButton.addEventListener("click", function() {
         console.log("Mute/Unmute");
-		if (video.muted) {
+	if (video.muted) {
             // Unmute the video
             video.muted = false;
             // Restore the previous volume
@@ -63,7 +63,8 @@ window.addEventListener("load", function() {
             document.querySelector('#slider').value = previousVolume * 100;
             document.querySelector('#volume').textContent = Math.round(previousVolume * 100) + '%';
 			muteButton.textContent = "Mute";
-        } else {
+        } 
+	else {
             // Mute the video
             previousVolume = video.volume; // Store the current volume
             video.muted = true;
