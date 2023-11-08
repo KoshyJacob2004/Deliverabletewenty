@@ -49,14 +49,14 @@ window.addEventListener("load", function() {
            video.volume = previousVolume;
             document.querySelector('#slider').value = previousVolume * 100;
             document.querySelector('#volume').textContent = Math.round(previousVolume * 100) + '%';
-			muteButton.textContent = "Unmute";
+			muteButton.textContent = "Mute";
         } else {
            previousVolume = video.volume;
             video.muted = true;
            video.volume = 0;
             document.querySelector('#slider').value = 0;
             document.querySelector('#volume').textContent = "0%";
-			muteButton.textContent = "Mute";
+			muteButton.textContent = "Unmute";
         }
     });
 
