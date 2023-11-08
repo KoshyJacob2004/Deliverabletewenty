@@ -72,7 +72,7 @@ window.addEventListener("load", function() {
             // Update the volume slider and text
             document.querySelector('#slider').value = 0;
             document.querySelector('#volume').textContent = "0%";
-			muteButton.textContent = "Unmute";
+			muteButton.textContent = "Unmjhkhkute";
         }
     });
 
