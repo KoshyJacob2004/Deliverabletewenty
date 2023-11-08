@@ -66,6 +66,7 @@ window.addEventListener("load", function() {
         } 
 	else {
             // Mute the video
+		muteButton.textContent = "Unmjhkhkute";
             previousVolume = video.volume; // Store the current volume
             video.muted = true;
             // Set volume to 0
@@ -73,7 +74,7 @@ window.addEventListener("load", function() {
             // Update the volume slider and text
             document.querySelector('#slider').value = 0;
             document.querySelector('#volume').textContent = "0%";
-			muteButton.textContent = "Unmjhkhkute";
+			
         }
     });
 
