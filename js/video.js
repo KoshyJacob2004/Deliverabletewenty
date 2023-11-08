@@ -6,7 +6,6 @@ window.addEventListener("load", function() {
 	video.autoplay = false;
 	video.loop = false;
 	video.volume = document.querySelector('#slider').value / 100;
-
 	document.querySelector("#play").addEventListener("click", function() {
 		console.log("Play Video");
 		video.play();
