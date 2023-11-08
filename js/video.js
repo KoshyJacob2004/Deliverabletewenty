@@ -2,10 +2,8 @@ var video;
 window.addEventListener("load", function() {
 	
     console.log("Good job opening the window")
-
-    video = document.getElementById("player1");
+	video = document.getElementById("player1");
 	video.autoplay = false;
-	video.pause();
 	video.loop = false;
 	video.volume = document.querySelector("#slider").value/100;
 
@@ -33,11 +31,7 @@ window.addEventListener("load", function() {
         
     });
 	document.querySelector("#skip").addEventListener("click", () => {
-
-    	advanceVideo();
-		
-	
-        
+    	advanceVideo();    
     });
 	document.getElementById('vintage').addEventListener('click', function() {
 		var videoElement = document.getElementById('player1');
@@ -61,10 +55,6 @@ window.addEventListener("load", function() {
 
 		}
 	});
-
-
-
-
 });
 
 function advanceVideo() {
